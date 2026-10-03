@@ -1,0 +1,12 @@
+# Sensitive material must be stored outside this project.
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+secrets/
+
+# Python test artifacts
+__pycache__/
+*.py[cod]
