@@ -23,7 +23,7 @@ class GitignoreTests(unittest.TestCase):
                 self.assertEqual(result.returncode, 0)
 
     def test_project_files_are_not_ignored(self):
-        for path in ("AGENTS.md", ".gitignore", "tests/test_gitignore.py"):
+        for path in ("AGENTS.md", "H_C_plan.md", ".gitignore", "tests/test_gitignore.py"):
             with self.subTest(path=path):
                 result = subprocess.run(
                     ["git", "check-ignore", "--no-index", "-q", path], cwd=ROOT,
