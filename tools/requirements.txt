@@ -1,0 +1,2 @@
+-r ../services/python/requirements.txt
+matplotlib==3.10.8

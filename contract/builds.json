@@ -1,0 +1,8 @@
+{
+  "go": {"runtime": "Go 1.24.1", "framework": "net/http", "build": "CGO_ENABLED=0 go build -trimpath -ldflags='-s -w'", "concurrency": "GOMAXPROCS=quota"},
+  "java": {"runtime": "Temurin 21.0.6+7", "framework": "JDK HttpServer + Gson 2.12.1", "build": "javac (JIT enabled at runtime)", "concurrency": "virtual threads; ActiveProcessorCount=quota"},
+  "csharp": {"runtime": ".NET 9.0.4; SDK 9.0.203", "framework": "ASP.NET Core / Kestrel", "build": "dotnet publish -c Release", "concurrency": "thread pool; DOTNET_PROCESSOR_COUNT=quota"},
+  "node": {"runtime": "Node 22.14.0", "framework": "node:http", "build": "NODE_ENV=production", "concurrency": "cluster workers=quota"},
+  "python": {"runtime": "CPython 3.12.9", "framework": "aiohttp 3.13.5", "build": "no debug/reload", "concurrency": "processes=quota, SO_REUSEPORT"},
+  "rust": {"runtime": "Rust 1.90.0", "framework": "Axum 0.8.1 / Tokio 1.44.1 / reqwest 0.12.28", "build": "cargo build --release --locked; LTO; codegen-units=1", "concurrency": "Tokio workers=quota; CPU blocking permits=quota"}
+}

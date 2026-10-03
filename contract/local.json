@@ -1,0 +1,12 @@
+{
+  "mode": "local",
+  "target": {"url": "http://127.0.0.1:8080", "docker": ["docker", "--host=unix:///var/run/docker.sock"], "host_command": []},
+  "downstream": {"url": "http://127.0.0.1:8081", "data_url": "http://hc-downstream:8080/data", "host_command": []},
+  "network": "hc-bench",
+  "seed": 20261003,
+  "max_inflight": 10000,
+  "max_lag_ms": 10,
+  "downstream_max_p99_ms": 25,
+  "warmup_seconds": 120,
+  "curve_rates": [100, 200, 400]
+}

@@ -1,0 +1,11 @@
+.git
+results
+**/__pycache__
+**/target
+**/bin
+**/obj
+.env
+.env.*
+*.key
+*.pem
+secrets

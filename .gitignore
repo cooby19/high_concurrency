@@ -10,3 +10,12 @@ secrets/
 # Python test artifacts
 __pycache__/
 *.py[cod]
+
+# Generated builds and benchmark output
+results/
+**/target/
+**/bin/
+**/obj/
+*.class
+*.jar
+.venv/

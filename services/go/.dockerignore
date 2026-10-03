@@ -1,0 +1,11 @@
+.env
+.env.*
+*.pem
+*.key
+secrets
+credentials.json
+secrets.json
+target
+bin
+obj
+__pycache__
